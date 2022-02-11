@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The blog</title>
+</head>
+
+<body>
+    <h1>Home</h1>
+    <ul>
+
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="embedding.html">Embedding</a> </li>
+        <li><a href="html5.html">Html</a> </li>
+
+    </ul>
+
+    <form enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Anagrafica</legend>
+            <label for="firstname">Nome<span style="color: firebrick;">*</span></label><br>
+            <input type="text" name="firstname" id="firstname" minlength="3" autofocus required><br>
+            <label for="lastname">Cognome</label><br>
+            <input type="text" name="lastname" id="lastname" autofocus required><br><br>
+
+            <label for="male"><input type="radio" name="gender" id="male" value="M">M</label>
+            <label for="female"><input type="radio" name="gender" id="female" value="F">F</label><br>
+            <label for="dateofbirth">Data nascita</label>
+            <input type="date" name="dateofbirth" id="dateofbirth">
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Interessi</legend>
+            <label for="Music">Music</label>
+            <input type="checkbox" name="Music" id=""><br>
+            <label for="Designer">Designer</label>
+            <input type="checkbox" name="Designer" id=""><br>
+            <label for="Nerding">Nerding</label>
+            <input type="checkbox" name="Nerding" id=""><br>
+            <label for="Coding">Coding</label>
+            <input type="checkbox" name="Coding" id=""><br>
+
+            <label for="mysite">Inserisci il tuo sito</label><br>
+            <input type="url" name="mysite" id="mysite" placeholder="inserisci il tuo sito"><br>
+
+
+
+            <label for="mail">Inserisci la tua email</label><br>
+            <input type="email" name="mail" id="mail" placeholder="Inserisci la tua email"><br>
+
+
+            <label for="num">Insersci il tuo numero</label><br>
+            <input type="number" name="num" id="num" min="0" max="15"><br>
+            <label for="score">Inserisci la tua valutazione</label><br>
+            <input type="range" name="score" id="score" min="0" max="10"><br>
+            <label for="ora">Inserire ora di nascita</label><br>
+            <input type="time" name="ora" id="ora"><br>
+            <label for="colore">Insersci il tuo colore preferito</label><br>
+            <input type="color" name="colore" id="colore"><br>
+            <label for="car">Scegli la marca di auto</label><br>
+            <select name="macchina" id="car" multiple><br>
+                <option value="">Scegli tra i seguenti veicoli</option>
+                <optgroup label="Auto italiane">
+
+                    <option value="ita">Fiat</option>
+                    <option value="ita">Lancia</option>
+                    <option value="ita">Jeep</option>
+                </optgroup>
+
+                <option value="usa">Ford</option>
+                <option value="fr1">Pegeout</option>
+                <option value="fr2">Renault</option>
+            </select>
+
+            <small>per selezionare valori non contigui, usare il tasto <kbd><b>Ctrl</b></kbd></small>
+
+        </fieldset>
+        <label for="msg">Lascia un messaggio</label><br>
+        <textarea name="msg" id="msg" cols="100" rows="1" maxlength="100"
+            autofocus>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore atque quibusdam, quos iste, accusamus fugit ut modi, possimus eos rem recusandae quas. Dolores repudiandae alias perspiciatis molestias. Vero, velit temporibus!</textarea><br>
+        <label for="cerca">Cerca</label><br>
+        <input type="search" name="cerca" id="cerca">
+        <br><br>
+
+        <fieldset>
+            <label for="file">Carica le tue immagini</label>
+            <input type="file" name="file" id="file" accept="image/*" multiple><br>
+            <label for="file">Carica i tuoi video</label>
+            <input type="file" name="file" id="file" accept="video/*" multiple><br>
+            <input type="submit" value="Invia"><input type="reset" value="Ripristina">
+            <input type="button" value="Non cliccare!" onclick="alert('Wow tu si che sei un ribelle')">
+
+
+        </fieldset>
+
+
+
+    </form>
+
+</body>
+
+</html>
