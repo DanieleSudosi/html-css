@@ -1,0 +1,52 @@
+#box{
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+    height: 200px;
+
+    background-color:gray;
+   
+    position: relative;
+
+    border: 2px solid black;
+
+    margin-bottom: 20px;
+    
+    /* visibility: hidden;  o collapse*/
+
+    /* display: none; per far sparire dalla visibilità */
+
+    display: table;
+}
+
+.contenuto{
+
+    display: table-cell;
+}
+
+#box2{
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 2px solid black;
+
+    position: relative;
+
+    opacity: 0.5;
+
+    margin-top: -100px;
+    
+}
+
+.red-box{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+
+    top: 10px;
+    left: 10px;
+
+}
